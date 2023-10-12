@@ -1,0 +1,34 @@
+変更差分を確認するには、git diffコマンド
+
+gti diffコードで分かること
+・ワークツリー（自分のPC）とステージ間の差異 git diff
+・ステージとリポジトリ間の差異 git diff --staged
+
+変更履歴の確認は　git logコマンド
+
+gti diffコードで分かること
+・git log --oneline
+・git log -p index.html ファイルの変更履歴
+・git log -n N N回分の履歴
+
+
+
+ファイルの削除をするには　git rmコマンド
+・git rm ファイル名（ディレクトリ名）ワークツリーもリポジトリも消す
+・git rm --cached ファイル名　ワークツリーには残し、gitの記録から消す
+
+ファイルの移動の記録 ファイル名の変更もこれ
+・git mv 旧ファイル　新ファイル
+
+
+GitHubに変更を反映　git remote add origin <URL>
+originというシュートカットでGitHubの<URL>にリポジトリを登録
+
+すると、URLなしでorigiという名前でGitHubにプッシュ（ローカルリポジトリのコミットをGitHubに送る）できる。
+
+
+git push リモート名　ブランチ名
+例えば　git push origin master
+
+0. Personal access tokens (本人確認のパスワード的なもの)の設定
+admin　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
